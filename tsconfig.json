@@ -13,5 +13,5 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-  ]
+, "app/(drawer)/(tabs)/_layout.tsx", "app/(drawer)/(tabs)/profile.js", "app/(drawer)/favourites.js", "app/(drawer)/settings.tsx", "app/blog/index.tsx"  ]
 }
