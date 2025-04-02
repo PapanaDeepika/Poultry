@@ -6,10 +6,7 @@ export default function _layout() {
   return (
     <Stack
       screenOptions={{
-        headerStyle: {
-          backgroundColor: "red",
-        },
-        headerTintColor: "white",
+     headerShown:false
       }}
     >
       <Stack.Screen

@@ -14,7 +14,7 @@ const CustomDrawerContent = (props:any) => {
   const pathname = usePathname();
 
   useEffect(() => {
-    console.log(pathname);
+    console.log(pathname, "Drawerrrrrrrr", props);
   }, [pathname]);
 
   return (
@@ -39,7 +39,7 @@ const CustomDrawerContent = (props:any) => {
             color={pathname == "/feed" ? "#fff" : "#000"}
           />
         )}
-        label={"Feed"}
+        label="Feed"
         labelStyle={[
           styles.navItemLabel,
           { color: pathname == "/feed" ? "#fff" : "#000" },
@@ -111,7 +111,7 @@ export default function Layout() {
   return (
     <Drawer drawerContent={(props) => <CustomDrawerContent {...props} />} screenOptions={{headerShown: false}}>
       <Drawer.Screen name="favourites" options={{headerShown: true}} />
-      <Drawer.Screen name="settings" options={{headerShown: true}} />
+      <Drawer.Screen name="settings" options={{headerShown: true, title:"Settings"}} />
     </Drawer>
   );
 }
